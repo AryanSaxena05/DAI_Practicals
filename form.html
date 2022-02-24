@@ -6,33 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
   </head>
+  <style>
+    table{
+      border: 2px solid black ;
+      background-color: aliceblue;
+      margin-left: 25%;
+    }
+    h1 {text-align: center;}
+  </style>
   <body>
     <h1>Student Form</Form></h1>
     <form action="">
-      <table>
+      <table width = "50%">
         <tr>
-          <td>First Name</td>
+          <td class ="heading">First Name</td>
           <td>:</td>
           <td><input type="text" placeholder="Enter your First name" /></td>
         </tr>
         <tr>
-          <td>Last Name</td>
+          <td class ="heading">Last Name</td>
           <td>:</td>
           <td><input type="text" placeholder="Enter your last name" /></td>
         </tr>
         <tr>
-          <td>Email</td>
+          <td class ="heading">Email</td>
           <td>:</td>
           <td><input type="email" placeholder="abc@gmail.com" /></td>
         </tr>
         <tr>
-          <td>Mobile Number</td>
+          <td class ="heading">Mobile Number</td>
           <td>:</td>
           <td><input type="number" min="1000000000" max="9999999999" /></td>
         </tr>
         <tr>
-          <td>Gender</td>
+          <td class ="heading">Gender</td>
           <td>:</td>
           <td>
             <input type="radio" name="gender" checked />Male
@@ -40,17 +49,17 @@
           </td>
         </tr>
         <tr>
-          <td>Date of Birth</td>
+          <td class ="heading">Date of Birth</td>
           <td>:</td>
           <td><input type="date" /></td>
         </tr>
         <tr>
-          <td>Address</td>
+          <td class ="heading">Address</td>
           <td>:</td>
           <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
         </tr>
         <tr>
-          <td>Qualification</td>
+          <td class ="heading">Qualification</td>
           <td>:</td>
           <td>
             <select name="" id="">
@@ -61,7 +70,7 @@
           </td>
         </tr>
         <tr>
-          <td rowspan="4">Specialization</td>
+          <td class ="heading" rowspan="4" >Specialization</td>
           <td rowspan="4">:</td>
           <td><input type="checkbox" />Computer Science</td>
         </tr>
@@ -75,14 +84,14 @@
           <td><input type="checkbox" />Electrical Engineer</td>
         </tr>
         <tr>
-          <td>Password</td>
+          <td class ="heading" >Password</td>
           <td>:</td>
           <td><input type="password" /></td>
         </tr>
         <tr>
           <td><input type="submit" value="Submit" /></td>
           <td></td>
-          <td><input type="reset" value="reset" /></td>
+          <td><input type="reset" value="Reset" /></td>
         </tr>
       </table>
     </form>
